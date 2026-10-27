@@ -1,4 +1,4 @@
-# FALCON: A Temporal Graph Framework for Failure Propagation Analysis and User-Perceived Availability Assessment from Mobile App Reviews
+# FALCON: A Temporal Graph Framework for Failure Propagation Analysis from Mobile App Reviews
 
 ## About FALCON
 FALCON is a temporal graph-based framework designed to model, analyze, and detect cascading software failures from mobile application user reviews[cite: 1, 2]. Unlike conventional review mining methods that analyze software issues as isolated, independent events, FALCON captures their temporal dependencies, cascading behaviors, and evolutionary patterns over time[cite: 1, 2]. It introduces the Availability Resilience Index (ARI) to evaluate continuous, user-perceived application availability and resilience without relying on proprietary runtime telemetry or crash logs[cite: 1, 2].
