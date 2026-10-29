@@ -756,25 +756,33 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <div className={`flex items-center gap-2 px-2.5 py-1.5 rounded-lg border text-xs ${surfaceClasses.subCardBg}`}>
-            <span className="relative flex h-2 w-2">
-              <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isApple ? 'bg-[#30D158]' : 'bg-[#57D9A3]'}`}></span>
-              <span className={`relative inline-flex rounded-full h-2 w-2 ${isApple ? 'bg-[#30D158]' : 'bg-[#107C41]'}`}></span>
-            </span>
-            <span className="font-mono text-[11px]">1,796 Reviews</span>
-          </div>
+<div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg border text-emerald-400 border-emerald-500/30 bg-emerald-500/10">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span className="font-mono text-[11px] font-semibold">29,428 Reviews</span>
+              </div>
 
-          <button
-            onClick={() => setShowConfigModal(true)}
-            className={`p-1.5 rounded-lg border transition ${surfaceClasses.subCardBg} ${surfaceClasses.secondaryText} hover:text-white`}
-            title="Formula Weight Calibration"
-          >
-            <Sliders className="w-4 h-4" />
-          </button>
-        </div>
-      </header>
+              <a 
+                href="/falcon_corpus_29428.csv" 
+                download="falcon_corpus_29428.csv"
+                className="px-2.5 py-1.5 text-[11px] font-mono bg-neutral-800 hover:bg-neutral-700 text-neutral-300 border border-neutral-700 rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer"
+                title="Export full authentic dataset"
+              >
+                📥 Export CSV
+              </a>
 
+              <button
+                onClick={() => setShowConfigModal(true)}
+                className={`p-1.5 rounded-lg border transition ${surfaceClasses.buttonGhost}`}
+                title="Formula Weight Calibration"
+              >
+                ⚙️
+              </button>
+            </div>
+        </header>
       <section className={`border-b ${surfaceClasses.headerBg} px-5 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-4 transition-colors`}>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5">
